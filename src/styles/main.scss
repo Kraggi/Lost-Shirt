@@ -87,8 +87,7 @@ ul > li {
   height: 100%;
 }
 .fade-slider__item {
-  background: url('/src/img/content/hero/slider_pic_1.png') center center /
-    contain no-repeat;
+  background: url('/src/img/content/hero/slider_pic_1.png') center center / contain no-repeat;
   height: 100%;
 }
 
@@ -171,15 +170,36 @@ ul > li {
 
 .products__price {
   position: absolute;
+  top: 18px;
+  left: -6px;
+  width: 126px;
+  border-bottom: 45px solid #232323;
+  border-left: 5px solid transparent;
+  border-right: 2px solid transparent;
+  transform: rotate(179deg);
+}
+.products__price-amount {
+  font-family: $titlesFont;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  transform: rotate(179deg);
+  position: absolute;
   top: 0;
-  left: 0;
-
-  border: 2px solid black;
+  right: 28px;
 }
 
 .products__item--color-black {
   background-color: #232323;
 }
+
+.products__item--color-black .products__price {
+  border-bottom-color: $yellow;
+}
+.products__item--color-black .products__price-amount {
+  color: #212121;
+}
+
 .products__item--size-double {
   width: 630px;
   height: 544px;
