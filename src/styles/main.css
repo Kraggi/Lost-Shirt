@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'alegreya';
-  src: url("/src/fonts/alegreyasanssc-black-webfont.woff2") format("woff2"), url("/src/fonts/alegreyasanssc-black-webfont.woff") format("woff");
+  src: url("../fonts/alegreyasanssc-black-webfont.woff2") format("woff2"), url("../fonts/alegreyasanssc-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -40,7 +40,7 @@ ul > li {
 .hero {
   height: 100vh;
   min-height: 650px;
-  background: url("/src/img/bg/hero.jpg") center center/cover no-repeat;
+  background: url("..//img/bg/hero.jpg") center center/cover no-repeat;
   position: relative;
   margin-bottom: 130px;
 }
@@ -220,11 +220,11 @@ ul > li {
 }
 
 .fade-slider__item--style--thirts {
-  background-image: url("/src/img/content/hero/slider_pic_1.png");
+  background-image: url("../img/content/hero/slider_pic_1.png");
 }
 
 .fade-slider__item--style--games {
-  background-image: url("/src/img/content/hero/slider_pic_2.png");
+  background-image: url("../img/content/hero/slider_pic_2.png");
 }
 
 .fade-slider__item--style--games .fade-slider__text {
@@ -239,7 +239,7 @@ ul > li {
 }
 
 .fade-slider__item--style--presents {
-  background-image: url("/src/img/content/hero/slider_pic_3.png");
+  background-image: url("../img/content/hero/slider_pic_3.png");
 }
 
 .fade-slider__item--style--presents .fade-slider__text {
@@ -486,7 +486,7 @@ ul > li {
           flex: 1;
   overflow: hidden;
   margin-right: 30px;
-  background: url(/src/img/bg/pattern.png) center center/500px;
+  background: url(../img/bg/pattern.png) center center/500px;
   position: relative;
 }
 
@@ -502,11 +502,11 @@ ul > li {
 }
 
 .collection__item--type-guys:before {
-  background-image: url("/src/img/collections/collection_man.png");
+  background-image: url("../img/collections/collection_man.png");
 }
 
 .collection__item--type-girls:before {
-  background-image: url("/src/img/collections/collection_woman.png");
+  background-image: url("../img/collections/collection_woman.png");
   top: -31%;
   width: 80%;
   left: -25%;
@@ -646,7 +646,7 @@ ul > li {
 
 .extras__col-socials {
   height: 100%;
-  background: url(/src/img/bg/pattern.png) center center/500px;
+  background: url(../img/bg/pattern.png) center center/500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
