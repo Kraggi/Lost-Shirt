@@ -113,23 +113,23 @@
         <div class="container">
           <ul class="filter">
             <li class="filter__item filter__item--active">
-              <a href="" class="filter__link">популярное</a>
+              <a href="" data-filter="popular" class="filter__link">популярное</a>
             </li>
             <li class="filter__item">
-              <a href="" class="filter__link">новинки</a>
+              <a href="" data-filter="new" class="filter__link">новинки</a>
             </li>
             <li class="filter__item">
-              <a href="" class="filter__link">бестселлеры</a>
+              <a href="" data-filter="bestsellers" class="filter__link">бестселлеры</a>
             </li>
             <li class="filter__item">
-              <a href="" class="filter__link">специальные предложения</a>
+              <a href="" data-filter="specials" class="filter__link">специальные предложения</a>
             </li>
             <li class="filter__item">
-              <a href="" class="filter__link">скоро в продаже</a>
+              <a href="" data-filter="soon" class="filter__link">скоро в продаже</a>
             </li>
           </ul>
           <ul class="products__list">
-            <li class="products__item">
+            <li class="products__item new bestsellers">
               <div class="products__price">
                 <div class="products__price-amount">1 800</div>
               </div>
@@ -143,7 +143,7 @@
                 </div>
               </div>
             </li>
-            <li class="products__item">
+            <li class="products__item new specials soon">
               <div class="products__price">
                 <div class="products__price-amount">1 800</div>
               </div>
@@ -157,7 +157,7 @@
                 </div>
               </div>
             </li>
-            <li class="products__item products__item--color-black products__item--size-double">
+            <li class="products__item new popular bestsellers specials products__item--color-black products__item--size-double">
               <div class="products__price">
                 <div class="products__price-amount">1 800</div>
               </div>
@@ -171,7 +171,7 @@
                 </div>
               </div>
             </li>
-            <li class="products__item products__item--color-black products__item--size-double">
+            <li class="products__item new popular soon products__item--color-black products__item--size-double">
               <div class="products__price">
                 <div class="products__price-amount">1 800</div>
               </div>
@@ -185,7 +185,7 @@
                 </div>
               </div>
             </li>
-            <li class="products__item">
+            <li class="products__item new specials soon">
               <div class="products__price">
                 <div class="products__price-amount">1 800</div>
               </div>
@@ -199,7 +199,7 @@
                 </div>
               </div>
             </li>
-            <li class="products__item">
+            <li class="products__item new">
               <div class="products__price">
                 <div class="products__price-amount">1 800</div>
               </div>
@@ -367,7 +367,9 @@
         </div>
       </footer>
 
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
       <script src="/src/js/sidebar-menu.js"></script>
       <script src="/src/js/fade-slider.js"></script>
+      <script src="/src/js/filter.js"></script>
   </body>
 </html>
