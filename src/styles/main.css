@@ -32,7 +32,7 @@ ul > li {
 
 .container {
   margin: 0 auto;
-  height: 1300px;
+  max-height: 1300px;
   max-width: 1300px;
 }
 
@@ -390,5 +390,69 @@ ul > li {
 
 .collections__desc {
   margin-bottom: 28px;
+}
+
+.footer {
+  margin-bottom: 115px;
+}
+
+.footer__container {
+  width: 1105px;
+}
+
+.site-menu__sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-menu__col {
+  margin-right: 20px;
+}
+
+.site-menu__col:last-child {
+  margin-right: 0;
+}
+
+.site-menu__title {
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b1b1b;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.site-menu__item {
+  margin-bottom: 15px;
+}
+
+.site-menu__link {
+  color: #737373;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.site-menu__link:hover {
+  color: #d82727;
+}
+
+.site-menu__text {
+  font-size: 15px;
+  color: #1b1b1b;
+}
+
+.site-menu__adress {
+  margin-bottom: 25px;
+}
+
+.site-menu__text-row {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */
