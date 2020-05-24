@@ -28,7 +28,8 @@ ul > li {
 }
 
 .wrapper {
-  min-width: 1310px;
+  overflow: hidden;
+  min-width: 1440px;
 }
 
 .container {
