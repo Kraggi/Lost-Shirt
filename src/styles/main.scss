@@ -179,12 +179,46 @@ ul > li {
 .fade-slider {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .fade-slider__item {
-  background: url('/src/img/content/hero/slider_pic_1.png') center center / contain no-repeat;
+  background: center center / contain no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
+.fade-slider__item--visible {
+  opacity: 1;
+}
+
+.fade-slider__item--style--thirts {
+  background-image: url('/src/img/content/hero/slider_pic_1.png');
+}
+
+.fade-slider__item--style--games {
+  background-image: url('/src/img/content/hero/slider_pic_2.png');
+}
+.fade-slider__item--style--games .fade-slider__text {
+  left: 130%;
+  top: 90%;
+}
+
+.fade-slider__item--style--games .lined-text {
+  align-items: center;
+}
+
+.fade-slider__item--style--presents {
+  background-image: url('/src/img/content/hero/slider_pic_3.png');
+}
+.fade-slider__item--style--presents .fade-slider__text {
+  left: 80%;
+  top: 70%;
+}
 .fade-slider__text {
   position: absolute;
   left: 50%;
@@ -205,6 +239,7 @@ ul > li {
   background: $black;
   padding: 0 17px 8px;
   margin-top: -7px;
+  white-space: nowrap;
 }
 .lined-text__word--color-yellow {
   color: $yellow;
