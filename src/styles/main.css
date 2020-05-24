@@ -87,6 +87,116 @@ ul > li {
   height: 72%;
 }
 
+.sidebar {
+  width: 75px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #212121;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.sidebar--opened {
+  width: 325px;
+  padding: 0 3% 0 4%;
+}
+
+.sidebar__menu {
+  position: absolute;
+  left: -400px;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
+}
+
+.sidebar--opened .sidebar__menu {
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.sidebar__hamburger-icon {
+  width: 29px;
+  height: 29px;
+  fill: #ffbc2f;
+}
+
+.sidebar__hamburger {
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.sidebar--opened .sidebar__hamburger {
+  display: none;
+}
+
+.sidebar--opened .sidebar__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar__header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar__close {
+  position: absolute;
+  top: -4px;
+  right: 23px;
+}
+
+.sidebar__close-icon {
+  width: 29px;
+  height: 29px;
+  fill: #ffbc2f;
+}
+
+.side-menu__item {
+  margin-bottom: 20px;
+}
+
+.side-menu__link {
+  font-size: 20px;
+  color: #ffbc2f;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+}
+
+.side-menu__link:hover {
+  color: #d82727;
+}
+
 .fade-slider {
   width: 100%;
   height: 100%;

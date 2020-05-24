@@ -49,6 +49,7 @@ ul > li {
   position: relative;
   margin-bottom: 130px;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -84,6 +85,97 @@ ul > li {
   width: 1140px;
   height: 72%;
 }
+
+.sidebar {
+  width: 75px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #212121;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: width 0.3s;
+}
+
+.sidebar--opened {
+  width: 325px;
+  padding: 0 3% 0 4%;
+}
+
+.sidebar__menu {
+  position: absolute;
+  left: -400px;
+  transition: left 0.3s;
+}
+.sidebar--opened .sidebar__menu {
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition-delay: 0.1s;
+}
+
+.sidebar__hamburger-icon {
+  width: 29px;
+  height: 29px;
+  fill: $yellow;
+}
+
+.sidebar__hamburger {
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.sidebar--opened .sidebar__hamburger {
+  display: none;
+}
+
+.sidebar--opened .sidebar__header {
+  display: flex;
+}
+
+.sidebar__header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+}
+.sidebar__close {
+  position: absolute;
+  top: -4px;
+  right: 23px;
+}
+
+.sidebar__close-icon {
+  width: 29px;
+  height: 29px;
+  fill: $yellow;
+}
+
+.side-menu__item {
+  margin-bottom: 20px;
+}
+
+.side-menu__link {
+  font-size: 20px;
+  color: $yellow;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $titlesFont;
+}
+
+.side-menu__link:hover {
+  color: $red;
+}
+
 .fade-slider {
   width: 100%;
   height: 100%;
