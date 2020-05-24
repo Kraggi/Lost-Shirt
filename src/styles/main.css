@@ -33,6 +33,7 @@ ul > li {
 .container {
   margin: 0 auto;
   height: 1300px;
+  max-width: 1300px;
 }
 
 .hero {
@@ -176,6 +177,10 @@ ul > li {
   background-color: #1b1b1b;
 }
 
+.products {
+  margin-bottom: 160px;
+}
+
 .products__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,9 +317,78 @@ ul > li {
   color: #fff;
 }
 
+.collections {
+  margin-bottom: 135px;
+}
+
 .collections__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.collections__item {
+  min-height: 474px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  margin-right: 30px;
+  background: url(/src/img/bg/pattern.png) center center/500px;
+  position: relative;
+}
+
+.collections__item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 176%;
+  width: 60%;
+  top: -17%;
+  left: -18%;
+  background: center center / contain no-repeat;
+}
+
+.collection__item--type-guys:before {
+  background-image: url("/src/img/collections/collection_man.png");
+}
+
+.collection__item--type-girls:before {
+  background-image: url("/src/img/collections/collection_woman.png");
+  top: -31%;
+  width: 80%;
+  left: -25%;
+}
+
+.collections__link {
+  display: block;
+  padding: 74px 13% 74px 44%;
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+  position: relative;
+}
+
+.collections__link:hover .btn {
+  background-color: #d82727;
+  color: #fff;
+}
+
+.collections__title {
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.collections__item:last-child {
+  margin-right: 0;
+}
+
+.collections__desc {
+  margin-bottom: 28px;
 }
 /*# sourceMappingURL=main.css.map */
