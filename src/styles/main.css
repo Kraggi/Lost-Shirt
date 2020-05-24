@@ -311,4 +311,10 @@ ul > li {
   background-color: #d82727;
   color: #fff;
 }
+
+.collections__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=main.css.map */
